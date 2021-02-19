@@ -11,7 +11,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div>Люблю дашку<div>
 <form action="registrationAction.php" method="post">
     
     <div class="form-group">
