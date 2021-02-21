@@ -12,7 +12,6 @@
 </head>
 <body>
 <form action="registrationAction.php" method="post">
-    
     <div class="form-group">
         <label for="exampleInputEmail1">Login</label>
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Login" name="login">

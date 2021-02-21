@@ -15,7 +15,7 @@ if($data['choise']=='delete'){
 }
 
 if($isUser){
-    header('Location: http://localhost/dashboard/Lesson4PHP/autorization.php');
+    header('https://autorizationform.herokuapp.com/autorization.php');
 }else {
-    header('Location: http://localhost/dashboard/Lesson4PHP/view.php');
+    header('https://autorizationform.herokuapp.com/view.php');
 }

@@ -9,6 +9,6 @@ if(DBconnection::haveEqualUser($data['login'],$data['email'])){
     echo "Have user!";
 } else {
     DBconnection::addUser($data['login'], $data['email'],$data['password']);
-    header('Location: http://localhost/dashboard/Lesson4PHP/autorization.php');
+    header('https://autorizationform.herokuapp.com/autorization.php');
 
 }
