@@ -6,7 +6,8 @@ $data=$_POST;
 if(DBconnection::haveUser($data['email'],$data['password'])){
     $_SESSION['email']=$data['email'];
     $_SESSION['password']=md5($data['password']);
-    header('https://autorizationform.herokuapp.com/view.php');
+    echo('<a href="autorization.php">К глвной</a> ');
+   // header('https://autorizationform.herokuapp.com/view.php');
 } else {
     echo "No user!";
 }
