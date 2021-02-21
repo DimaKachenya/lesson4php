@@ -1,6 +1,7 @@
 <?php
-require_once "DBconnection.php";
 session_start();
+require_once "DBconnection.php";
+
 $data=$_POST;
 
 if(DBconnection::haveUser($data['email'],$data['password'])){

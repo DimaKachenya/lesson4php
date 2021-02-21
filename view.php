@@ -6,8 +6,9 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <?php
-    require_once "DBconnection.php";
     session_start();
+    require_once "DBconnection.php";
+
     $userEmail=$_SESSION['email'];
     $userPassword=$_SESSION['password'];
     $user=R::find('users','email= ? and password = ?',array($userEmail,$userPassword));

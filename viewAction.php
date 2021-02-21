@@ -15,9 +15,9 @@ if($data['choise']=='delete'){
 }
 
 if($isUser){
-    echo('<a href="autorization.php">К авторизации</a> ');
-    //header('https://autorizationform.herokuapp.com/autorization.php');
+    //echo('<a href="autorization.php">К авторизации</a> ');
+    header('https://autorizationform.herokuapp.com/autorization.php');
 }else {
-    echo('<a href="autorization.php">К главной</a> ');
-    //header('https://autorizationform.herokuapp.com/view.php');
+    //echo('<a href="autorization.php">К главной</a> ');
+    header('https://autorizationform.herokuapp.com/view.php');
 }
